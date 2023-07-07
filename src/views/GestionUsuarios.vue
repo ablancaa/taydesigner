@@ -34,7 +34,7 @@
     <select class="form-control" id="docente">
         <option v-for="phone in datos.phones" :key="phone.fijo">{{phone.fijo}}</option>
     </select>
-    <ul v-for="phone in datos.phones" :key="phone">
+    <ul v-for="phone in datos" :key="phone">
         <li>{{ datos.phones }}</li>
     </ul>
 </div>
