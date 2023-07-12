@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Registros from '../views/Registros.vue'
 import GestionUsuarios from '../views/GestionUsuarios.vue'
 import Facturacion from '../views/Facturacion.vue'
+import NewUser from '../components/newUser.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/gestionUsuarios',
     name: 'GestionUsuarios',
     component: GestionUsuarios
+  },
+  {
+    path: '/newUser',
+    name: 'newUser',
+    component: NewUser
   },
   {
     path: '/clientes',

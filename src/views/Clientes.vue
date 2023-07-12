@@ -27,9 +27,6 @@ async function getListado() {
   });
 }
 
-
-
-
 </script>
 <script>
   export default {
@@ -38,7 +35,6 @@ async function getListado() {
 </script>
 <style scoped>
 .center {
-
     display: flex;
     justify-content: center;
 }
