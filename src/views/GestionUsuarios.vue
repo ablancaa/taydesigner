@@ -108,12 +108,8 @@ async function addNewUser (newUser) {
             movil: newUser.phones.movil
         }
     });
-console.log("Document written with ID: ", docRef.id);
-
-  // Add a new document in collection "cities"
-  //await setDoc(doc(db, "taydesigner",new), newUser);
-  
-   
+    console.log("Document written with ID: ", docRef.id);
+    location.reload();
 }
 
 
