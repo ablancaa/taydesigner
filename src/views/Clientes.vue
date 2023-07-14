@@ -32,7 +32,8 @@ onMounted(() => {
               item.apellido1.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
               item.apellido2.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
               item.mail.includes(searchTerm.value) ||
-              item.phones.fijo.includes(searchTerm.value)
+              item.phones.fijo.includes(searchTerm.value) ||
+              item.phones.movil.includes(searchTerm.value)
            );
           });
          }
@@ -40,7 +41,7 @@ onMounted(() => {
       })
 
 function setSearchTerm(search) {
-      console.log(search);
+      //console.log(search);
       searchTerm.value = search;
     }
 
@@ -49,6 +50,7 @@ async function getListado() {
   querySnapshot.forEach((doc) => {
     datos.push(doc.data());
   });
+  localStorage.setItem("lista", JSON.stringify(datos));
 }
 
 </script>
