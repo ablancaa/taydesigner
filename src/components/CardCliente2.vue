@@ -11,19 +11,22 @@
             </div>
             <div class="backSide">
                 <p class="">{{ props.cliente.nombre }} {{ props.cliente.apellido1 }} {{ props.cliente.apellido2 }}<br/>{{ props.cliente.direccion }}</p>
-                <p>
+                <p class="left">
                     <button class="Btn">
                       <div class="sign"><img src="../assets/icons/telephone.svg" height="25"/></div>
-                      <div class="text">{{ props.cliente.phone }}</div>
+                      <div class="text">{{ props.cliente.phones.movil }}</div>
                     </button>
-                </p>
-                <p>
-                    <button class="Btn marginTop">
+                    <button class="Btn">
+                      <div class="sign"><img src="../assets/icons/telephone.svg" height="25"/></div>
+                      <div class="text">{{ props.cliente.phones.fijo }}</div>
+                    </button>
+                    <button class="Btn">
                       <div class="sign"><img src="../assets/icons/envelope-at.svg" height="25"/></div>
-                      <div class="text textEmail">{{ props.cliente.email }}</div>
+                      <div class="text textEmail">{{ props.cliente.mail }}</div>
                     </button>
                 </p>
-                <p>{{ props.cliente.bio }}</p>
+                
+                <p>{{ props.cliente.id }}</p>
             </div>
         </div>
     </div>
@@ -42,6 +45,13 @@ const props = defineProps({
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 5px;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -148,7 +158,8 @@ const props = defineProps({
 .Btn {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+
+  justify-content: left;
   width: 45px;
   height: 45px;
   border: none;
@@ -158,7 +169,7 @@ const props = defineProps({
   overflow: hidden;
   transition-duration: .3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: rgb(255, 65, 65);
+  background-color: rgb(160, 166, 252);
 }
 
 /* plus sign */

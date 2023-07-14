@@ -14,7 +14,7 @@
 import CardCliente2 from '@/components/CardCliente2.vue'
 // eslint-disable-next-line no-undef
 const props = defineProps({
-  listaClientes: Array
+  listaClientes: Array,
 })
 </script>
 
