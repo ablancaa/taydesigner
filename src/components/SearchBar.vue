@@ -31,10 +31,10 @@
   position: relative;
 }
   .search {
-    width: 100%;
+    width: 40%;
     padding: 15px;
     display: flex;
-    align-items: center;
+    align-content: center;
     border-bottom: 1px solid #ccc;
     margin-bottom: 25px;
     margin-top: -10px;
@@ -60,7 +60,7 @@
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    background: blue;
+    background: rgb(119, 119, 228);
     color: #fff;
   }
 

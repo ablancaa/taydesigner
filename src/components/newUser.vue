@@ -121,19 +121,22 @@ float: right;
   overflow-y: auto;
   background-color: rgba(0,0,0,0.4);
   z-index: 1;
+  border-radius: 0.3rem;
 }
 
 .vue-modal-inner{
   max-width: 500px;
   margin: 2rem auto;
+  border-radius: 0.3rem;
 }
 
 .vue-modal-content{
   position: relative;
+  margin-top: 220px;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,0.3);
   background-clip: padding-box;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   padding: 1rem;
 }
 
