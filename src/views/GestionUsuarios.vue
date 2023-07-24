@@ -29,7 +29,7 @@
         <tr v-for="dato in datos" :key="dato.id">
           <td>{{ dato.id }}</td>
           <td>
-            <input type="text" v-if="editar" placeholder="dato.nombre" />{{ dato.nombre }}
+            <input type="text" v-if="editar" placeholder="nombre" />{{ dato.nombre }}
           </td>
           <td>{{ dato.apellido1 }} {{ dato.apellido2 }}</td>
           <td>{{ dato.mail }}</td>
@@ -42,7 +42,7 @@
             <button @click="edit()" v-if="!editar">
               <img src="../assets/icons/escritura.png" width="20" />
             </button>
-            <button v-if="editar" @click="escribir()">
+            <button v-if="editar" @click="escribir(dato.id)">
               <img src="../assets/icons/confirmar.png" width="20" />
             </button>
           </td>
@@ -100,7 +100,8 @@ function edit() {
   editar.value = true;
 }
 
-function escribir() {
+function escribir(id) {
+  console.log(id);
   editar.value = false;
 }
 async function addNewUser(newUser) {

@@ -4,7 +4,8 @@
     <router-link to="/clientes">Clientes</router-link> |
     <router-link to="/registros">Registros</router-link> |
     <router-link to="/facturacion">Facturación</router-link> |
-    <router-link to="/gestionUsuarios">Gestión de usuarios</router-link>
+    <router-link to="/gestionUsuarios">Gestión de usuarios</router-link> |
+    <router-link to="/tableros">Tableros</router-link>
   </nav>
   <router-view/>
 </template>
